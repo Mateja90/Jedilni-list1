@@ -14,10 +14,9 @@ while True:
     jed.write(raw_input("Vnesi ceno:") + "€\n")
     i += 1
     A=raw_input("Želiš vnesti še kakšno jed? (da/ne) ")
-    if A.lower()=="da":
-        continue
-    else:
+    if A.lower()!="da":
         break
+
 
 jed.write("Vse cene vsebujejo ddv. Želimo vam dober tek!")
 jed.close()
